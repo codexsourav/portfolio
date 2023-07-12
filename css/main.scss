@@ -1,0 +1,654 @@
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Wix Madefor Display', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Style the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #cb001e96;
+    border-radius: 0px;
+}
+
+/* Style the track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+    background-color: #090909;
+}
+
+html {
+    background-color: #090909;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.content {
+    padding: 0px 100px;
+    max-width: 1600px;
+    margin: 0px auto;
+
+}
+
+.content-box {
+    scroll-snap-align: start;
+    height: 100vh;
+    max-width: 100%;
+    padding-top: 70px;
+    color: white;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #090909;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    color: white;
+    font-family: 'Wix Madefor Display', sans-serif;
+
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.navbar .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+
+    li a {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.box {
+    width: 180px;
+    height: 140px;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    opacity: 0.3;
+    position: absolute;
+    bottom: 100px;
+    -webkit-filter: blur(55px);
+    -moz-filter: blur(55px);
+    -o-filter: blur(55px);
+    -ms-filter: blur(55px);
+    filter: blur(55px);
+}
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#home {
+
+
+    .row {
+        // background-color: red;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .img {
+            width: 600px;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                z-index: 999;
+            }
+
+            .box {
+                margin-top: 200px;
+                margin-left: 200px;
+            }
+        }
+    }
+
+    .column {
+        align-items: start;
+        justify-content: start;
+
+        .header {
+            width: 85%;
+        }
+
+        .title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 55px;
+            font-weight: bolder;
+            padding: 5px 0px;
+
+            .colortext {
+                color: #cb001f;
+            }
+        }
+
+        .iam {
+            font-size: 35px;
+            font-family: 'Wix Madefor Display', sans-serif;
+            padding-bottom: 40px;
+        }
+
+        .desc {
+            font-family: 'Roboto', sans-serif;
+            text-transform: capitalize;
+            margin-bottom: 10px;
+            line-height: 30px;
+        }
+    }
+
+
+}
+
+.links {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 25px;
+        margin: 20px 0px;
+        margin-bottom: 50px;
+
+        li a {
+            font-size: 20px;
+            color: white;
+
+            opacity: 0.7;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .buttons {
+        .hire {
+            margin-right: 200px !important;
+        }
+    }
+}
+
+.btn {
+    padding: 13px 22px;
+    border-radius: 50px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #cb001f;
+}
+
+
+#about {
+    .row {
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .img {
+            width: 450px;
+            margin-right: 20px;
+        }
+
+        .column {
+            padding-left: 80px;
+            font-family: 'Wix Madefor Display', sans-serif;
+
+            .title {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            .desc {
+                line-height: 30px;
+                text-align: justify;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#portfolio {
+
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .center-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+            font-family: 'Wix Madefor Display', sans-serif;
+            margin-top: 30px;
+            font-size: 30px;
+            display: block;
+            text-align: center;
+
+            &::after {
+                content: "";
+                display: block;
+                margin: 0px auto;
+                width: 70px;
+                text-align: center;
+                margin-top: 8px;
+                border-top: 1.5px solid rgb(255, 255, 255);
+            }
+        }
+    }
+
+    .items {
+        font-family: 'Wix Madefor Display', sans-serif;
+        padding: 50px 0px;
+        display: flex;
+
+        .p-box {
+            img {
+                width: 100%;
+            }
+
+            h1 {
+                margin-top: 5px;
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 10px;
+                margin-top: 5px;
+
+            }
+        }
+
+        // display: flex;
+        gap: 30px;
+    }
+
+    .viewall {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+
+        a {
+            border: 1px solid #fff;
+            padding: 14px 25px;
+            color: white;
+            font-family: 'Wix Madefor Display', sans-serif;
+            transition: 0.5s ease;
+
+            &:hover {
+                border: 1px solid #090909;
+                background-color: white;
+                color: #090909;
+            }
+        }
+    }
+}
+
+#skill {
+
+    font-family: 'Wix Madefor Display', sans-serif;
+
+    .row {
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 450px;
+            margin-right: 20px;
+        }
+
+        .column {
+
+            .title {
+                font-size: 50px;
+                margin-bottom: 30px;
+
+                &::before {
+                    content: "Sourav";
+                    width: 180px;
+                    height: 140px;
+                    background: rgb(255, 0, 0);
+                    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                    opacity: 0.3;
+                    bottom: 100px;
+                    margin-right: -180px;
+                    -webkit-filter: blur(55px);
+                    -moz-filter: blur(55px);
+                    -o-filter: blur(55px);
+                    -ms-filter: blur(55px);
+                    filter: blur(55px);
+                }
+            }
+
+            .skill_list {
+                ul {
+                    display: flex;
+                    width: 100%;
+                    list-style: none;
+                    flex-direction: column;
+
+                    li {
+                        p {
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                            margin-top: 25px;
+                        }
+
+                        .progress {
+                            background-color: #cfcfcf;
+                            height: 20px;
+                            width: 500px;
+                            border-radius: 8px;
+                            overflow: hidden;
+
+                            .progressBar {
+                                width: 60%;
+                                height: 20px;
+                                border-radius: 8px;
+                                background-color: #cb001f;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+#contact {
+    font-family: 'Wix Madefor Display', sans-serif;
+
+    .row {
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 450px;
+            margin-right: 20px;
+        }
+
+        .column {
+            .title {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+
+            .form {
+                width: 500px;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                .inp {
+                    width: 100%;
+                    padding: 14px 10px;
+                    margin-bottom: 20px;
+                    border: none;
+                }
+
+                textarea {
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    img {
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        scroll-snap-type: none;
+    }
+
+    .content {
+        padding: 0px 30px;
+        overflow: visible;
+
+        .content-box {
+            height: auto;
+        }
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home {
+        .row {
+            .img {
+                margin-top: 40px;
+                width: 90%;
+            }
+        }
+
+        .column {
+            margin-top: 40px;
+            width: 100%;
+
+
+            .title {
+                font-size: 35px;
+            }
+
+            .desc {
+                text-align: justify;
+                width: 100%;
+            }
+
+            .iam {
+                margin-top: 20px;
+                font-size: 22px;
+            }
+        }
+    }
+
+    img {
+        width: 90% !important;
+    }
+
+    #about {
+        margin-top: 50px;
+
+        .row {
+            justify-content: center;
+
+            .img {
+                width: 90%;
+                margin-right: 0px;
+            }
+
+            .column {
+                padding-left: 0px;
+
+                .title {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    #portfolio {
+
+
+        .items {
+
+            font-family: 'Wix Madefor Display', sans-serif;
+            width: 100%;
+            padding: 50px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .p-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+
+                h1 {
+                    margin-top: 15px;
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 10px;
+                    margin-top: 5px
+                }
+            }
+
+            // display: flex;
+            gap: 0px;
+        }
+
+
+    }
+
+    #skill {
+
+        .row {
+            justify-content: center;
+
+            img {
+                width: 90%;
+                margin-top: 50px;
+                margin-right: 0px;
+
+            }
+
+            .column {
+                width: 100%;
+
+                .title {
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                    margin-left: 0px;
+                    margin-top: 30px;
+
+
+                    &::before {
+                        content: "";
+                        display: none;
+                    }
+                }
+
+                .skill_list {
+                    ul {
+
+                        li {
+                            .progress {
+
+                                height: 15px;
+                                width: 100%;
+
+
+                                .progressBar {
+                                    width: 60%;
+                                    height: 15px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    #contact {
+
+        margin-bottom: 120px;
+
+        .row {
+
+            img {
+                width: 90%;
+                margin-right: 0px;
+
+            }
+
+            .column {
+                .title {
+                    font-size: 40px;
+                    margin-bottom: 35px;
+                    margin-top: 35px;
+                }
+
+                .form {
+                    display: block;
+                    width: calc(100vw - 90px);
+                }
+            }
+        }
+
+    }
+}
