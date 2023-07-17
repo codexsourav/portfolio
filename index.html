@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> I ` Am Sourav</title>
+    <meta name="theme-color" content="#090909" />
+
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Wix+Madefor+Display&display=swap"
         rel="stylesheet">
@@ -13,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/main.css">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -22,15 +26,17 @@
         <div class="content-box" id="home">
             <div class="box"></div>
             <div class="navbar" data-aos="fade-down">
-                <h2>SOURAV</h2>
-                <div class="menu">
+                <h2><a href="#" style="color: white;">SOURAV</a></h2>
+                <i class="fa-solid fa-bars" id="menubar-btn"></i>
+                <div class="menu" id="menu-box">
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">My Works</a></li>
-                        <li><a href="#skill">Skils</a></li>
-                        <li><a href="#contact">Contact</a></li>
 
+                        <li class="closemenu"><a href="#home">Home</a></li>
+                        <li class="closemenu"><a href="#about">About</a></li>
+                        <li class="closemenu"><a href="#portfolio">My Works</a></li>
+                        <li class="closemenu"><a href="#skill">Skils</a></li>
+                        <li class="closemenu"><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" id="menubar-close" ></i>
                     </ul>
                 </div>
             </div>
@@ -38,7 +44,7 @@
 
                 <div class="column">
                     <div class="header">
-                        <h1 class="title" data-aos="fade-up"><span class="colortext">Hello I'M</span> SOURAV BAPARI</h1>
+                        <h1 class="title" data-aos="fade-down"><span class="colortext">Hello I'M</span> SOURAV BAPARI</h1>
                         <h2 class="iam" data-aos="fade-up">I Am <span id="typaping"></span></h2>
                         <div class="desc" data-aos="fade-up">
                             <p>I make websites/apps that are easy to use, meet the client's needs,
@@ -55,7 +61,7 @@
                                 <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                             </ul>
                         </div>
-                        <div class="buttons" data-aos="fade-right">
+                        <div class="buttons" data-aos="fade-up">
                             <a href="#" class="btn hire">Hire Me</a>
                             <a class="btn btn-primary" href="#">Download CV</a>
                         </div>
@@ -64,7 +70,7 @@
 
                 <div class="img">
                     <div class="box"><img src="assets/sourav.webp" alt="sourav"></div>
-                    <img src="assets/sourav.webp" alt="sourav" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="assets/sourav.webp" alt="sourav" data-aos="fade-up" data-aos-duration="2000">
                 </div>
             </div>
         </div>
@@ -102,7 +108,7 @@
             <div class="items">
 
                 <div class="p-box" data-aos="fade-up">
-                    <img src="assets/work1.jpg" alt="work1">
+                    <img src="assets/work1.jpg" alt="work1"  width="300">
                     <h1>Next Js Blog</h1>
                     <p>JUN 2022</p>
                     <p>USE: Next JS, MongoDb</p>
@@ -199,10 +205,10 @@
         </div>
         <div class="content-box" id="contact">
             <div class="row">
-                <img src="assets/call.svg" alt="about" width="350px" class="img" data-aos="zoom-in"
+                <img src="assets/call.svg" alt="about" width="350px" class="img" data-aos="fade-up"
                     data-aos-duration="1500">
                 <div class="column">
-                    <h1 class="title" data-aos="fade-left">Contact US</h1>
+                    <h1 class="title" data-aos="fade-up">Contact US</h1>
                     <div class="form" data-aos="fade-up">
 
                         <label>Name</label>
@@ -212,18 +218,19 @@
                         <label>Message</label>
                         <textarea type="text" class="inp"></textarea><br>
                     </div>
-                    <div class="links" data-aos="fade-down">
+                    <div class="links" data-aos="fade-up">
                         <a href="#" class="btn btn-primary">SEND MAIL</a>
                     </div>
 
                 </div>
 
             </div>
-            <div class="fotter">
 
-            </div>
         </div>
     </section>
+    <div class="fotter">
+<p>@Sourav - 2023</p>
+    </div>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -251,6 +258,7 @@
 
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 

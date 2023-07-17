@@ -96,6 +96,7 @@ body {
   opacity: 0.3;
   position: absolute;
   bottom: 100px;
+  -webkit-filter: blur(55px);
   -moz-filter: blur(55px);
   -o-filter: blur(55px);
   -ms-filter: blur(55px);
@@ -305,6 +306,7 @@ body {
   opacity: 0.3;
   bottom: 100px;
   margin-right: -180px;
+  -webkit-filter: blur(55px);
   -moz-filter: blur(55px);
   -o-filter: blur(55px);
   -ms-filter: blur(55px);
@@ -584,4 +586,4 @@ body {
   text-align: center;
   margin-bottom: 40px;
   font-family: "Wix Madefor Display", sans-serif;
-}/*# sourceMappingURL=main.css.map */
+}
